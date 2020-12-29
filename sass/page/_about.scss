@@ -1,0 +1,67 @@
+section.intro-section {
+	p {
+		margin: 2% 40% 0 0;
+		color: $paragraph-color;
+	}
+}
+
+section.ules-at-a-glance-and-two-depts {
+	.column {
+		flex: 50%;
+		padding: 5%;
+	}
+
+	section.ules-at-a-glance {
+		color: #fff;
+		background-color: $light-blue-decoration;
+
+		h1.section-header {
+			margin-bottom: 5%;
+
+			svg {
+			 line {
+					stroke: #fff;
+				}
+			}
+		}
+
+		ul {
+			list-style: circle;
+
+			li {
+				margin: 5% 0;
+			}
+		}
+
+		a {
+			display: block;
+			margin: 10% 0 0;
+			text-align: center;
+		}
+	}
+}
+
+
+// Styles the Respectivc Department Association Sections, also affects the two depts in the flex container
+section.dept-info {
+	margin-bottom: 20%;
+	padding: 0;
+
+	h1.section-header {
+		margin-bottom: 5%;
+
+	   svg {
+		   display: block;
+		   padding: 0;
+		   margin: 1% 0 0;
+	   } 
+	}
+
+	p {
+		color: $paragraph-color;
+	}
+}
+
+section.rest-of-the-depts {
+	padding: 10% 20% 0;
+}

@@ -1,0 +1,13 @@
+.options-all-or-image {
+    h1 {
+        display: inline-block;
+        margin: 0 2.5%;
+        font-family: monospace;
+        cursor: pointer;
+    }
+
+    .active {
+        padding: 0.5% 2%;
+        border: 1px solid $green-underline-and-decoration;
+    }
+}

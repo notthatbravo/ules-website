@@ -1,0 +1,227 @@
+
+
+
+// HOMEPAGE STYLING BEGINS
+
+// Hero Section
+// Styling for the background-image is in the _base.scss file
+section.homepage-hero {
+    padding-bottom: 20%; // gives spacing that balances out the negative margin-top on "The nation's pride" section
+    background-image: url("../img/homepage-hero-bg.jpg");
+
+    h1 {
+        margin: 0 40% 5% 0;
+        font-size: 3.8em;
+    }
+
+    h2 {
+        margin-right: 40%;
+        font-size: 1.6em;
+        font-weight: 200;
+    }
+
+    // Most of the styling is in the _base.scss file
+    .carousel-buttons-container {
+        float: right;
+        margin-top: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+//  The Nation's Pride
+section.the-nations-pride {
+    width: 90%;
+    margin: -10% auto 0;
+    padding: 0;
+    color: #fff;
+    background-color: $green-underline-and-decoration;
+
+    img {
+        float:left;
+        margin-right: 5%;
+    }
+
+    h2 {
+        margin: 5% 0 2%;
+        font-size: 1.3em;
+    }
+
+    p {
+        margin-right: 20%;
+    }
+}
+
+
+// President's Welcome Address
+section.president-welcome-address {
+    img {
+        float: right;
+        width: 20em;
+    }
+
+    h1.section-header {
+        margin: 10% 0 2%;
+    }
+
+    p {
+        margin-right: 40%;
+        color: $paragraph-color;
+    }
+
+    b {
+        display: block;
+        margin: 2% 0 0;
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+
+    h2 {
+        color: $paragraph-color;
+    }
+}
+
+
+// Highlights Section
+section.highlights-bg {
+    padding-bottom: 20%;
+    background-image: url("../img/homepage-highlights-bg.jpeg");
+}
+
+// What the Three Flex divs have in common
+.homepage-flex-containers {
+    padding: 0 2.5%;
+
+    .column {
+        flex: 25%;
+        margin: 0 2.5%;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        .decoration-line {
+            width: 100%;
+            height: 5px;
+        }
+
+        p {
+            padding: 5%;
+        }
+
+    }
+}
+
+.highlights-options-container {
+    margin-top: -2.5%;
+
+    .column {
+        background-color: #fff;
+
+        .decoration-line {
+            background-color: $light-blue-decoration;
+        }
+
+        p {
+            padding-bottom: 10%;
+            text-align: center;
+        }
+    }
+
+    .column:hover {
+        color: #fff;
+        background-color: $light-blue-decoration;
+    }
+}
+
+.highlights-images-container {
+    .column {
+        margin-top: 2.5%;
+        text-align: center;
+        cursor: initial;
+
+
+        img {
+            width: 100%;
+            height: 20em;
+        }
+    }
+}
+
+.highlights-news-content-container {
+
+    .column {
+        margin: -5% 4% 0;
+        background-color: #fff;
+
+        .decoration-line {
+            background-color: $green-underline-and-decoration;
+        }
+    }
+
+    .column:hover {
+        color: #fff;
+        background-color: $green-underline-and-decoration;
+    }
+}
+
+
+.call-to-action-options {
+    margin: 5% 0;
+
+    .column {
+        color: $light-blue-decoration;
+    }
+
+    .carousel-buttons-container {
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    .column-subscribe {
+        text-align: right;
+    }
+}
+
+
+// Our Goals Section 
+section.goals {
+    padding-bottom: 10%;
+    color: #fff;
+    background-image: url("../img/homepage-our-goals-bg.jpg");
+
+    p {
+        margin: 7.5% 0 15%;
+        text-align: center;
+    }
+
+    .flex {
+        .column {
+            flex: 20%;
+            text-align: center;
+
+            h2 {
+                font-size: 4em;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+// Gallery Section
+section.homepage-gallery-mini-section {
+    text-align: center;
+
+    .options-all-or-image {
+        margin: 5% 0;
+    }
+
+    .images-container {
+        img {
+            width: 15em;
+            height: 15em;
+        }
+    }
+}
+
+
+// HOMEPAGE STYLING ENDS

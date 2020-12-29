@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.3em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+    flex-flow: wrap;
+}
+
+section {
+    padding: 5%;
+    overflow: hidden;
+
+    h1.section-header {
+        font-size: 1.3em;
+        font-family: "Questrial", sans-serif;
+
+        svg {
+            width: 4em;
+            height: 0.5em;
+            padding-left: 10px; 
+
+            line {
+                stroke: $green-underline-and-decoration;
+                stroke-width: 10px;
+            }
+        }
+    }
+}
+
+section.hero {
+    padding: 10% 5%;
+    color: #fff;
+    background-color: $hero-bg-color;
+
+    h2 {
+        font-size: 1.9em;
+        color: $hero-h2-color;
+    }
+
+    h1 {
+        font-size: 5em;
+        font-weight: 400;
+    }
+}
+
+section.has-a-bg-image-and-section-header-in-the-middle {
+    background-color: gray;
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: multiply;
+
+    h1.section-header {
+        color: #fff;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+
+// Carousel Toggle Buttons on the homepage hero and highlights section
+.carousel-buttons-container {
+    .carousel-button {
+        display: inline-block;
+        width: 0.9em;
+        height: 0.9em;
+        background-color:$green-underline-and-decoration; 
+        cursor: pointer;
+    }
+
+    .active {
+        width: 1.5em;
+        border: 1px solid $green-underline-and-decoration;
+        background-color: transparent;
+    }
+
+}
+
+
+
+// Alumni Testimnoials BG section
+section.alumni-testimonials-bg-container {
+    padding-bottom: 40%;
+    background-image: url("../img/alumni-testimonials-bg.jpg");
+}
+
+// Main Alumini Testimonials Section with white bg
+section.alumni-testimonials-container {
+    width: 80%;
+    margin: -10% auto 10%;
+    box-shadow: 0 0 2px 0 #000;
+    background-color: #fff;
+
+    // The Three Exco Heads
+    div.three-heads {
+        float: right;
+        display: grid;
+        place-items: center;
+
+        img {
+            margin: 15% 0;
+            border-radius: 5em;
+        }
+
+        #head1 {
+            width: 2.5em;
+            height: 2.5em;
+        }
+
+        #head2 {
+            width: 3.5em;
+            height: 3.5em;
+        }
+
+        #head3 {
+            width: 4.5em;
+            height: 4.5em;
+        }
+    }
+
+
+    // The  Man's Image Container
+    div.avatar-container {
+        float: left;
+        width: 20%;
+        height: 100%;
+        padding-top: 10%;
+
+        img.alumni-avatar {
+            width: 10em;
+            height: 10em;
+            border-radius: 10em;
+        }
+    }
+
+    // The Content is split separately from the image so that they won't overflow and spill beneath the man's image
+    div.rest-of-the-contents {
+        width: 80%;
+        overflow: hidden;
+
+        // Green Quote Mark
+        i.quotes {
+            margin-bottom: 5%;
+            color: $green-underline-and-decoration;
+            font-size: 3.5em;
+        }
+
+        // Name
+        h1 {
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 2% 30% 0 0;
+        }
+
+        div.socials {
+            width: 40%;
+            margin: 2% 0;
+
+            a{
+                flex: 33.33%;
+            }
+        }
+
+        div.arrows {
+            float: right;
+
+            i {
+                color: $green-underline-and-decoration;
+                font-size: 2em;
+            }
+        }
+    }
+}

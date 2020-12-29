@@ -1,0 +1,501 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.3em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  flex-flow: wrap;
+}
+
+section {
+  padding: 5%;
+  overflow: hidden;
+}
+section h1.section-header {
+  font-size: 1.3em;
+  font-family: "Questrial", sans-serif;
+}
+section h1.section-header svg {
+  width: 4em;
+  height: 0.5em;
+  padding-left: 10px;
+}
+section h1.section-header svg line {
+  stroke: #81ca00;
+  stroke-width: 10px;
+}
+
+section.hero {
+  padding: 10% 5%;
+  color: #fff;
+  background-color: #09203a;
+}
+section.hero h2 {
+  font-size: 1.9em;
+  color: #E1E1E1;
+}
+section.hero h1 {
+  font-size: 5em;
+  font-weight: 400;
+}
+
+section.has-a-bg-image-and-section-header-in-the-middle {
+  background-color: gray;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+section.has-a-bg-image-and-section-header-in-the-middle h1.section-header {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.carousel-buttons-container .carousel-button {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  background-color: #81ca00;
+  cursor: pointer;
+}
+.carousel-buttons-container .active {
+  width: 1.5em;
+  border: 1px solid #81ca00;
+  background-color: transparent;
+}
+
+section.alumni-testimonials-bg-container {
+  padding-bottom: 40%;
+  background-image: url("../img/alumni-testimonials-bg.jpg");
+}
+
+section.alumni-testimonials-container {
+  width: 80%;
+  margin: -10% auto 10%;
+  box-shadow: 0 0 2px 0 #000;
+  background-color: #fff;
+}
+section.alumni-testimonials-container div.three-heads {
+  float: right;
+  display: grid;
+  place-items: center;
+}
+section.alumni-testimonials-container div.three-heads img {
+  margin: 15% 0;
+  border-radius: 5em;
+}
+section.alumni-testimonials-container div.three-heads #head1 {
+  width: 2.5em;
+  height: 2.5em;
+}
+section.alumni-testimonials-container div.three-heads #head2 {
+  width: 3.5em;
+  height: 3.5em;
+}
+section.alumni-testimonials-container div.three-heads #head3 {
+  width: 4.5em;
+  height: 4.5em;
+}
+section.alumni-testimonials-container div.avatar-container {
+  float: left;
+  width: 20%;
+  height: 100%;
+  padding-top: 10%;
+}
+section.alumni-testimonials-container div.avatar-container img.alumni-avatar {
+  width: 10em;
+  height: 10em;
+  border-radius: 10em;
+}
+section.alumni-testimonials-container div.rest-of-the-contents {
+  width: 80%;
+  overflow: hidden;
+}
+section.alumni-testimonials-container div.rest-of-the-contents i.quotes {
+  margin-bottom: 5%;
+  color: #81ca00;
+  font-size: 3.5em;
+}
+section.alumni-testimonials-container div.rest-of-the-contents h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+section.alumni-testimonials-container div.rest-of-the-contents p {
+  margin: 2% 30% 0 0;
+}
+section.alumni-testimonials-container div.rest-of-the-contents div.socials {
+  width: 40%;
+  margin: 2% 0;
+}
+section.alumni-testimonials-container div.rest-of-the-contents div.socials a {
+  flex: 33.33%;
+}
+section.alumni-testimonials-container div.rest-of-the-contents div.arrows {
+  float: right;
+}
+section.alumni-testimonials-container div.rest-of-the-contents div.arrows i {
+  color: #81ca00;
+  font-size: 2em;
+}
+
+footer img {
+  width: 5em;
+  height: 5em;
+  margin: 1% 0 0 5%;
+}
+footer div {
+  float: right;
+  width: 20%;
+  margin: 2.5% 5% 0 0;
+  text-align: right;
+}
+footer div a {
+  flex: 33.33%;
+}
+
+nav {
+  padding: 1% 5%;
+  overflow: hidden;
+}
+nav img {
+  float: left;
+  width: 5em;
+  height: 5em;
+}
+nav ul.hide-on-mobile {
+  float: right;
+  width: 50%;
+  margin-top: 2%;
+}
+nav li {
+  flex: 13.33%;
+  text-align: center;
+}
+nav li a {
+  color: #707070;
+  transition: 0.3s ease-in-out;
+}
+nav li:hover a {
+  color: #000;
+}
+nav .active {
+  padding-bottom: 2%;
+  border-bottom: 4px solid #81ca00;
+}
+nav .active a {
+  color: #000;
+}
+nav .toggle-button {
+  display: none;
+  float: right;
+  margin: 5% 0 0;
+  font-size: 2em;
+  cursor: pointer;
+}
+nav ul.show-on-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  ul.hide-on-mobile {
+    display: none;
+  }
+
+  span.hamburger-icon {
+    display: block;
+  }
+
+  ul.show-on-mobile {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 40em;
+  }
+}
+section.homepage-hero {
+  padding-bottom: 20%;
+  background-image: url("../img/homepage-hero-bg.jpg");
+}
+section.homepage-hero h1 {
+  margin: 0 40% 5% 0;
+  font-size: 3.8em;
+}
+section.homepage-hero h2 {
+  margin-right: 40%;
+  font-size: 1.6em;
+  font-weight: 200;
+}
+section.homepage-hero .carousel-buttons-container {
+  float: right;
+  margin-top: 5%;
+  padding-right: 5%;
+}
+
+section.the-nations-pride {
+  width: 90%;
+  margin: -10% auto 0;
+  padding: 0;
+  color: #fff;
+  background-color: #81ca00;
+}
+section.the-nations-pride img {
+  float: left;
+  margin-right: 5%;
+}
+section.the-nations-pride h2 {
+  margin: 5% 0 2%;
+  font-size: 1.3em;
+}
+section.the-nations-pride p {
+  margin-right: 20%;
+}
+
+section.president-welcome-address img {
+  float: right;
+  width: 20em;
+}
+section.president-welcome-address h1.section-header {
+  margin: 10% 0 2%;
+}
+section.president-welcome-address p {
+  margin-right: 40%;
+  color: #B4B4B4;
+}
+section.president-welcome-address b {
+  display: block;
+  margin: 2% 0 0;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+section.president-welcome-address h2 {
+  color: #B4B4B4;
+}
+
+section.highlights-bg {
+  padding-bottom: 20%;
+  background-image: url("../img/homepage-highlights-bg.jpeg");
+}
+
+.homepage-flex-containers {
+  padding: 0 2.5%;
+}
+.homepage-flex-containers .column {
+  flex: 25%;
+  margin: 0 2.5%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.homepage-flex-containers .column .decoration-line {
+  width: 100%;
+  height: 5px;
+}
+.homepage-flex-containers .column p {
+  padding: 5%;
+}
+
+.highlights-options-container {
+  margin-top: -2.5%;
+}
+.highlights-options-container .column {
+  background-color: #fff;
+}
+.highlights-options-container .column .decoration-line {
+  background-color: #00aaff;
+}
+.highlights-options-container .column p {
+  padding-bottom: 10%;
+  text-align: center;
+}
+.highlights-options-container .column:hover {
+  color: #fff;
+  background-color: #00aaff;
+}
+
+.highlights-images-container .column {
+  margin-top: 2.5%;
+  text-align: center;
+  cursor: initial;
+}
+.highlights-images-container .column img {
+  width: 100%;
+  height: 20em;
+}
+
+.highlights-news-content-container .column {
+  margin: -5% 4% 0;
+  background-color: #fff;
+}
+.highlights-news-content-container .column .decoration-line {
+  background-color: #81ca00;
+}
+.highlights-news-content-container .column:hover {
+  color: #fff;
+  background-color: #81ca00;
+}
+
+.call-to-action-options {
+  margin: 5% 0;
+}
+.call-to-action-options .column {
+  color: #00aaff;
+}
+.call-to-action-options .carousel-buttons-container {
+  padding-top: 2%;
+  text-align: center;
+}
+.call-to-action-options .column-subscribe {
+  text-align: right;
+}
+
+section.goals {
+  padding-bottom: 10%;
+  color: #fff;
+  background-image: url("../img/homepage-our-goals-bg.jpg");
+}
+section.goals p {
+  margin: 7.5% 0 15%;
+  text-align: center;
+}
+section.goals .flex .column {
+  flex: 20%;
+  text-align: center;
+}
+section.goals .flex .column h2 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+section.homepage-gallery-mini-section {
+  text-align: center;
+}
+section.homepage-gallery-mini-section .options-all-or-image {
+  margin: 5% 0;
+}
+section.homepage-gallery-mini-section .images-container img {
+  width: 15em;
+  height: 15em;
+}
+
+section.intro-section p {
+  margin: 2% 40% 0 0;
+  color: #B4B4B4;
+}
+
+section.ules-at-a-glance-and-two-depts .column {
+  flex: 50%;
+  padding: 5%;
+}
+section.ules-at-a-glance-and-two-depts section.ules-at-a-glance {
+  color: #fff;
+  background-color: #00aaff;
+}
+section.ules-at-a-glance-and-two-depts section.ules-at-a-glance h1.section-header {
+  margin-bottom: 5%;
+}
+section.ules-at-a-glance-and-two-depts section.ules-at-a-glance h1.section-header svg line {
+  stroke: #fff;
+}
+section.ules-at-a-glance-and-two-depts section.ules-at-a-glance ul {
+  list-style: circle;
+}
+section.ules-at-a-glance-and-two-depts section.ules-at-a-glance ul li {
+  margin: 5% 0;
+}
+section.ules-at-a-glance-and-two-depts section.ules-at-a-glance a {
+  display: block;
+  margin: 10% 0 0;
+  text-align: center;
+}
+
+section.dept-info {
+  margin-bottom: 20%;
+  padding: 0;
+}
+section.dept-info h1.section-header {
+  margin-bottom: 5%;
+}
+section.dept-info h1.section-header svg {
+  display: block;
+  padding: 0;
+  margin: 1% 0 0;
+}
+section.dept-info p {
+  color: #B4B4B4;
+}
+
+section.rest-of-the-depts {
+  padding: 10% 20% 0;
+}
+
+.options-all-or-image h1 {
+  display: inline-block;
+  margin: 0 2.5%;
+  font-family: monospace;
+  cursor: pointer;
+}
+.options-all-or-image .active {
+  padding: 0.5% 2%;
+  border: 1px solid #81ca00;
+}
+
+section.newspage-overall-container {
+  background-color: #F3F3F3;
+}
+section.newspage-overall-container section.newspage-news-container {
+  margin: 5%;
+  padding-bottom: 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+section.newspage-overall-container section.newspage-news-container p {
+  margin: 5% 0;
+  color: #B4B4B4;
+}
+section.newspage-overall-container section.newspage-news-container a {
+  display: inline-block;
+  padding-right: 10%;
+  margin-bottom: 2%;
+  color: #00aaff;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+section.newspage-overall-container section.has-an-image {
+  padding-left: 0;
+}
+section.newspage-overall-container section.has-an-image .left-column {
+  flex: 45%;
+}
+section.newspage-overall-container section.has-an-image .left-column img {
+  width: 25em;
+  height: 25em;
+}
+section.newspage-overall-container section.has-an-image .right-column {
+  flex: 55%;
+}
+section.newspage-overall-container div.read-more {
+  float: right;
+  padding-right: 5%;
+  color: #00aaff;
+}
+
+/*# sourceMappingURL=main.css.map */

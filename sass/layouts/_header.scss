@@ -1,0 +1,78 @@
+nav {
+    padding: 1% 5%;
+    overflow: hidden;
+
+    img {
+        float: left;
+        width: 5em;
+        height: 5em;
+    }
+
+    ul.hide-on-mobile {
+        float: right;
+        width: 50%;
+        margin-top: 2%;
+    }
+
+    li {
+        flex: 13.33%;
+        text-align: center;
+
+        a {
+            color: $nav-color;
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    li:hover {
+        a {
+            color: #000;
+        }
+    }
+
+    .active {
+        padding-bottom: 2%;
+        border-bottom: 4px solid $green-underline-and-decoration;
+        
+        a {
+            color: #000;
+        }
+    }
+
+    // hide the menu buttons in desktop mode
+    .toggle-button {
+        display: none;
+        // positioning and styling
+        float: right;
+        margin: 5% 0 0;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    // Hide the navbar to show on mobile devices
+    ul.show-on-mobile {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+   //  Hides the navbar to show on desktop mode
+    ul.hide-on-mobile {
+        display: none;
+    }
+
+    span.hamburger-icon { // shows only the hamburger icon, the close icon would be shown with js
+        display: block;
+    }
+
+    ul.show-on-mobile {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 40em; // change it with js
+
+    }
+}

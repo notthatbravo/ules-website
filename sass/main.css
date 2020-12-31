@@ -767,6 +767,9 @@ section.contact-persons .flex .column p {
   margin: 5% 0;
   color: #B4B4B4;
 }
+section.contact-persons .flex .column p i {
+  margin-right: 2%;
+}
 section.contact-persons .flex .column p:hover {
   color: #000;
   text-decoration: underline;

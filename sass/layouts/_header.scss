@@ -51,6 +51,7 @@ nav {
         color: $green-underline-and-decoration;
         font-size: 2em;
         cursor: pointer;
+        transition: 0.5s ease-in-out; // switching between open and close in js
     }
 
     // Hide the navbar to show on mobile devices

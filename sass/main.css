@@ -304,19 +304,18 @@ nav ul.show-on-mobile {
 }
 
 @media (max-width: 800px) {
-  ul.hide-on-mobile {
+  nav ul.hide-on-mobile {
     display: none;
   }
-
-  span.hamburger-icon {
+  nav span.hamburger-icon {
     display: block;
   }
-
-  ul.show-on-mobile {
+  nav ul.show-on-mobile {
     display: grid;
     place-items: center;
     width: 100%;
-    height: 40em;
+    height: 0;
+    transition: 0.5s ease-in-out;
   }
 }
 section.homepage-hero {

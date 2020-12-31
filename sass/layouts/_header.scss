@@ -64,19 +64,21 @@ nav {
 @media (max-width: 800px) {
 
    //  Hides the navbar to show on desktop mode
-    ul.hide-on-mobile {
-        display: none;
-    }
+    nav{
+        ul.hide-on-mobile {
+            display: none;
+        }
 
-    span.hamburger-icon { // shows only the hamburger icon, the close icon would be shown with js
-        display: block;
-    }
+        span.hamburger-icon { // shows only the hamburger icon, the close icon would be shown with js
+            display: block;
+        }
 
-    ul.show-on-mobile {
-        display: grid;
-        place-items: center;
-        width: 100%;
-        height: 40em; // change it with js
-
+        ul.show-on-mobile {
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 0; // change it with js
+            transition: 0.5s ease-in-out;
+        }
     }
 }

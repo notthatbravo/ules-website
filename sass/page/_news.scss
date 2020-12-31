@@ -1,48 +1,87 @@
 section.newspage-overall-container {
-    background-color: $newspage-overall-container-bg;
+	background-color: $newspage-overall-container-bg;
 
-    section.newspage-news-container {
-        margin: 5%;
-        padding-bottom: 0;
-        background-color: #fff;
-        overflow: hidden;
+	section.newspage-news-container {
+		margin: 5%;
+		padding-bottom: 0;
+		background-color: #fff;
+		overflow: hidden;
 
-        p {
-            margin: 5% 0;
-            color: $paragraph-color;
-        }
+		p {
+			margin: 5% 0;
+			color: $paragraph-color;
+		}
 
-        a {
-            display: inline-block;
-            padding-right: 10%;
-            margin-bottom: 2%;
-            color: $light-blue-decoration;
-            font-size: 0.9em;
-            cursor: pointer;
-        }
-    }
+		a {
+			display: inline-block;
+			padding-right: 10%;
+			color: $light-blue-decoration;
+			font-size: 0.9em;
+			cursor: pointer;
+		}
+	}
 
-    section.has-an-image {
-        padding-left: 0;
-            
-        .left-column {
-            flex: 45%;
+	section.has-an-image {
+		padding-left: 0;
+			
+		.left-column {
+			flex: 45%;
 
-            img {
-                width: 25em;
-                height: 25em;
-            }
-        }
+			img {
+				width: 25em;
+				height: 25em;
+			}
+		}
 
-        .right-column {
-            flex: 55%;
-        }
-    }
+		.right-column {
+			flex: 55%;
+		}
+	}
 
-    div.read-more {
-        float: right;
-        padding-right: 5%;
-        color: $light-blue-decoration;
-    }
+	div.read-more {
+		float: right;
+		padding-right: 5%;
+		color: $light-blue-decoration;
+	}
 
 }
+
+
+// Responsiveness begins
+@media(max-width: 800px) {
+	section.newspage-overall-container {
+		section.newspage-news-container {
+			width: 100%;
+			margin: 5% 0 0;
+
+			a {
+				display: block;
+				margin-bottom: 2%;
+			}
+		}
+
+		section.has-an-image {
+			padding-top: 0;
+			padding-right: 0;
+
+			.left-column {
+				img {
+					width: 100%;
+					height: unset;
+					margin-bottom: 5%;
+				}
+			}
+
+			h1, p, a {
+				padding: 0 5%;
+			}
+		}
+
+		div.read-more {
+			margin-top: 5%;
+			text-align: center;
+		}
+	}
+}
+
+// Responsiveness Ends

@@ -1,98 +1,104 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    line-height: 1.3em;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	line-height: 1.3em;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 .flex {
-    display: flex;
-    flex-flow: wrap;
+	display: flex;
+	flex-flow: wrap;
 }
 
+.show-on-mobile {
+	display: none;
+}
+
+
 section {
-    padding: 5%;
-    overflow: hidden;
+	padding: 5%;
+	overflow: hidden;
 
-    h1.section-header {
-        font-size: 1.3em;
-        font-family: "Questrial", sans-serif;
+	h1.section-header {
+		font-size: 1.3em;
+		font-family: "Questrial", sans-serif;
+		margin-bottom: 2%;
 
-        svg {
-            width: 4em;
-            height: 0.5em;
-            padding-left: 10px; 
+		svg {
+			width: 4em;
+			height: 0.5em;
+			padding-left: 10px; 
 
-            line {
-                stroke: $green-underline-and-decoration;
-                stroke-width: 10px;
-            }
-        }
-    }
+			line {
+				stroke: $green-underline-and-decoration;
+				stroke-width: 10px;
+			}
+		}
+	}
 }
 
 section.hero {
-    padding: 10% 5%;
-    color: #fff;
-    background-color: $hero-bg-color;
+	padding: 10% 5%;
+	color: #fff;
+	background-color: $hero-bg-color;
 
-    h2 {
-        font-size: 1.9em;
-        color: $hero-h2-color;
-    }
+	h2 {
+		font-size: 1.9em;
+		color: $hero-h2-color;
+	}
 
-    h1 {
-        font-size: 5em;
-        font-weight: 400;
-    }
+	h1 {
+		font-size: 5em;
+		font-weight: 400;
+	}
 }
 
 section.has-a-bg-image-and-section-header-in-the-middle {
-    background-color: gray;
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: multiply;
+	background-color: gray;
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-blend-mode: multiply;
 
-    h1.section-header {
-        color: #fff;
-        font-size: 1.5em;
-        text-align: center;
-    }
+	h1.section-header {
+		color: #fff;
+		font-size: 1.5em;
+		text-align: center;
+	}
 }
 
 
 // Carousel Toggle Buttons on the homepage hero and highlights section
 .carousel-buttons-container {
-    .carousel-button {
-        display: inline-block;
-        width: 0.9em;
-        height: 0.9em;
-        background-color:$green-underline-and-decoration; 
-        cursor: pointer;
-    }
+	.carousel-button {
+		display: inline-block;
+		width: 0.9em;
+		height: 0.9em;
+		background-color:$green-underline-and-decoration; 
+		cursor: pointer;
+	}
 
-    .active {
-        width: 1.5em;
-        border: 1px solid $green-underline-and-decoration;
-        background-color: transparent;
-    }
+	.active {
+		width: 1.5em;
+		border: 1px solid $green-underline-and-decoration;
+		background-color: transparent;
+	}
 
 }
 
@@ -100,97 +106,191 @@ section.has-a-bg-image-and-section-header-in-the-middle {
 
 // Alumni Testimnoials BG section
 section.alumni-testimonials-bg-container {
-    padding-bottom: 40%;
-    background-image: url("../img/alumni-testimonials-bg.jpg");
+	padding-bottom: 40%;
+	background-image: url("../img/alumni-testimonials-bg.jpg");
 }
 
 // Main Alumini Testimonials Section with white bg
 section.alumni-testimonials-container {
-    width: 80%;
-    margin: -10% auto 10%;
-    box-shadow: 0 0 2px 0 #000;
-    background-color: #fff;
+	width: 80%;
+	margin: -10% auto 10%;
+	box-shadow: 0 0 2px 0 #000;
+	background-color: #fff;
 
-    // The Three Exco Heads
-    div.three-heads {
-        float: right;
-        display: grid;
-        place-items: center;
+	// The Three Exco Heads
+	div.three-heads {
+		float: right;
+		display: grid;
+		place-items: center;
 
-        img {
-            margin: 15% 0;
-            border-radius: 5em;
-        }
+		img {
+			margin: 15% 0;
+			border-radius: 5em;
+		}
 
-        #head1 {
-            width: 2.5em;
-            height: 2.5em;
-        }
+		#head1 {
+			width: 2.5em;
+			height: 2.5em;
+		}
 
-        #head2 {
-            width: 3.5em;
-            height: 3.5em;
-        }
+		#head2 {
+			width: 3.5em;
+			height: 3.5em;
+		}
 
-        #head3 {
-            width: 4.5em;
-            height: 4.5em;
-        }
-    }
+		#head3 {
+			width: 4.5em;
+			height: 4.5em;
+		}
+	}
 
 
-    // The  Man's Image Container
-    div.avatar-container {
-        float: left;
-        width: 20%;
-        height: 100%;
-        padding-top: 10%;
+	// The  Man's Image Container
+	div.avatar-container {
+		float: left;
+		width: 30%;
+		height: 100%;
+		padding-top: 10%;
 
-        img.alumni-avatar {
-            width: 10em;
-            height: 10em;
-            border-radius: 10em;
-        }
-    }
+		img.alumni-avatar {
+			width: 10em;
+			height: 10em;
+			border-radius: 10em;
+		}
+	}
 
-    // The Content is split separately from the image so that they won't overflow and spill beneath the man's image
-    div.rest-of-the-contents {
-        width: 80%;
-        overflow: hidden;
+	// The Content is split separately from the image so that they won't overflow and spill beneath the man's image
+	div.rest-of-the-contents {
+		width: 70%;
+		overflow: hidden;
 
-        // Green Quote Mark
-        i.quotes {
-            margin-bottom: 5%;
-            color: $green-underline-and-decoration;
-            font-size: 3.5em;
-        }
+		// Green Quote Mark
+		i.quotes {
+			margin-bottom: 5%;
+			color: $green-underline-and-decoration;
+			font-size: 3.5em;
+		}
 
-        // Name
-        h1 {
-            font-size: 1.4em;
-            font-weight: 700;
-        }
+		// Name
+		h1 {
+			font-size: 1.4em;
+			font-weight: 700;
+		}
 
-        p {
-            margin: 2% 30% 0 0;
-        }
+		p {
+			margin: 2% 30% 0 0;
+		}
 
-        div.socials {
-            width: 40%;
-            margin: 2% 0;
+		div.socials {
+			width: 40%;
+			margin: 2% 0;
 
-            a{
-                flex: 33.33%;
-            }
-        }
+			a{
+				flex: 33.33%;
+			}
+		}
 
-        div.arrows {
-            float: right;
+		div.arrows {
+			float: right;
 
-            i {
-                color: $green-underline-and-decoration;
-                font-size: 2em;
-            }
-        }
-    }
+			i {
+				color: $green-underline-and-decoration;
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+
+// Responsiveness begins
+@media (max-width: 800px) {
+
+	* {
+		// forcefully displaces all elements that have the float property attached.... affects the hamburger icon in the nav menu but another !important settles it
+		float: none !important;
+	}
+
+	// displaces the flex property on all elements with the class "flex"
+	.flex {
+		display: block;
+	}
+	
+	.show-on-mobile {
+		display: unset;
+	}
+
+	.hide-on-mobile {
+		display: none;
+	}
+
+	// Reduce the font-size of the texts in the hero section on the pages
+	section.hero {
+		h2 {
+			font-size: 1.5em;
+		}
+
+		h1 {
+			font-size: 4em;
+		}
+	}
+
+	section.has-a-bg-image-and-section-header-in-the-middle {
+		background-size: cover;
+	}
+
+	section.alumni-testimonials-bg-container {
+		padding-bottom: 60%;
+	}
+
+	section.alumni-testimonials-container {
+		width: 90%;
+		margin-top: -30%;
+
+		div.three-heads {
+			display:none;
+		}
+
+		div.avatar-container {
+			width: 100%;
+			text-align: center;
+		}
+
+		div.rest-of-the-contents {
+			width: 100%;
+			text-align: center;
+
+			p {
+				margin-right: 0;
+			}
+
+			div.socials {
+				width: 100%;
+
+				i {
+					display: inline-block;
+					margin: 0 10%;
+				}
+			}
+
+			div.arrows {
+				margin-top: 10%;
+			}
+		}
+
+		// Three heads that are only shown on mobile devices
+		div.mobile-three-heads {
+			display: block;
+			text-align: center;
+			width: 100%;
+			margin-top: 5%;
+
+			img {
+				margin: 0 10%;
+				width: 3.5em;
+				height: 3.5em;
+				border-radius: 50px;
+				cursor: pointer;
+			}
+		}
+	}
 }

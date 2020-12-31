@@ -1,18 +1,28 @@
 footer {
-    img {
-        width: 5em;
-        height: 5em;
-        margin: 1% 0 0 5%;
-    }
+	img {
+		width: 5em;
+		height: 5em;
+		margin: 1% 0 0 5%;
+	}
 
-    div {
-        float: right;
-        width: 20%;
-        margin: 2.5% 5% 0 0;
-        text-align: right;
+	div {
+		float: right !important;
+		width: 20%;
+		margin: 2.5% 5% 0 0;
+		text-align: right;
 
-        a {
-            flex: 33.33%;
-        }
-    }
+		a {
+			flex: 33.33%;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	footer {
+		div {
+			display: flex !important;
+			width: 40%;
+			margin-top: 5%;
+		}
+	}
 }

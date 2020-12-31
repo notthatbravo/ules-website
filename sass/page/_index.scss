@@ -224,4 +224,83 @@ section.homepage-gallery-mini-section {
 }
 
 
+// Responsiveness begins
+@media (max-width: 800px) {
+    section.homepage-hero {
+        padding-bottom: 40%;
+
+        h1 {
+            margin-right: 0;
+            font-size: 3em;
+        }
+
+        h2 {
+            margin-right: 0;
+            font-size: 1.3em;
+        }
+    }
+
+    section.the-nations-pride {
+        margin-top: -30%;
+        padding-bottom: 5%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h2, p {
+            padding-left: 5%;
+        }
+        p {
+            margin-right: 0;
+        }
+    }
+
+    section.president-welcome-address {
+        padding: 10% 5%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        p {
+            margin-right: 0;
+        }
+
+        b {
+            display: block;
+            margin-top: 5%;
+        }
+    }
+
+    .highlights-news-content-container {
+        .column {
+            margin: unset;
+            margin: 5%;
+        }
+    }
+
+    .call-to-action-options {
+        .column {
+            text-align: left;
+        }
+    }
+
+    section.highlights-bg {
+        padding-bottom: 40%;
+    }
+
+
+    section.goals {
+        .flex {
+            .column {
+                margin: 5% 0;
+            }
+        }
+    }
+}
+
+
+
 // HOMEPAGE STYLING ENDS

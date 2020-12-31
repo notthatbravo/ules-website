@@ -65,3 +65,40 @@ section.dept-info {
 section.rest-of-the-depts {
 	padding: 10% 20% 0;
 }
+
+
+// Responsiveness begins
+@media (max-width: 800px) {
+	section.aboutpage-hero {
+		// Reducing the fontsize of the "Our Departments", the default styling in the base.scss file still leaves it too big
+		h1 {
+			font-size: 2.6em;
+		}
+	}
+
+	section.intro-section {
+		h1.section-header {
+			svg {
+				display: block;
+				padding: 0;
+				margin-top: 2%;
+			}
+		}
+
+		p {
+			margin: 5% 0;
+		}
+	}
+
+
+	section.ules-at-a-glance-and-two-depts {
+		section.two-depts {
+			padding: 0;
+			margin-top: 10%;
+		}
+	}
+
+	section.rest-of-the-depts {
+		padding: 5%;
+	}
+}

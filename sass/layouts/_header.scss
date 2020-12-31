@@ -10,7 +10,7 @@ nav {
 
     ul.hide-on-mobile {
         float: right;
-        width: 50%;
+        width: 60%;
         margin-top: 2%;
     }
 
@@ -42,9 +42,13 @@ nav {
     // hide the menu buttons in desktop mode
     .toggle-button {
         display: none;
+
         // positioning and styling
-        float: right;
-        margin: 5% 0 0;
+
+        float: right !important; // the !important aattched is to prevent the property from being displaced by the responsive styling in the _base.scss file
+
+        margin: 3% 0 0;
+        color: $green-underline-and-decoration;
         font-size: 2em;
         cursor: pointer;
     }
